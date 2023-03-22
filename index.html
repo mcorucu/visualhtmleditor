@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Editor with Live Preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>mcorucu HTML Visual Editor</h1>
+  </header>
+  <div class="container">
+    <div class="editor">
+      <div class="editor-buttons">
+        <button id="backButton" title="Undo">&#x21E6;</button>
+        <button id="forwardButton" title="Redo">&#x21E8;</button>
+        <button id="clearButton" title="Clear">&#x2715;</button>
+      </div>
+      <textarea id="htmlEditor"></textarea>
+    </div>
+    <div class="preview">
+      <iframe id="htmlPreview"></iframe>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
